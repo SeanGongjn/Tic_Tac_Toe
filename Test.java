@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+
 public class Test {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -7,7 +8,12 @@ public class Test {
         int[][] board = new int[size][size];
         boolean gotResult = false;
         int numOfX = 0;
+
         int numOfO = 0;       
+
+        int numOfO = 0;
+        
+
         //读入矩阵
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board.length; j++) {
@@ -16,3 +22,11 @@ public class Test {
             }
         }
 	}
+        //查看棋盘
+        for (int[] is : board) {
+            for (int i : is) {
+                System.out.print(i + " ");
+            }
+            System.out.println();
+        }
+}
